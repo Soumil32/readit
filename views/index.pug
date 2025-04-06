@@ -1,0 +1,15 @@
+head
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css")
+    link(rel="stylesheet", href="https://unpkg.com/sakura.css/css/sakura.css")
+
+    title= title
+
+body
+    h1= title
+    div(style="display: flex; justify-content: space-between;")
+        small= published_time
+        small= read_time
+
+    hr
+
+    div!= htmlContent
