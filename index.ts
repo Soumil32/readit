@@ -30,6 +30,10 @@ app.listen(3000, () => {
     console.log('Example app listening on port 3000!');
 });
 
+app.get('/health', (req, res) => {
+    res.send('OK');
+});
+
 function santize_html(html: string) {
     const window = new JSDOM('').window;
     const DOMPurify = createDOMPurify(window);
